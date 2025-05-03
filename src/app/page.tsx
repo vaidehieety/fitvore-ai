@@ -17,17 +17,17 @@ const HomePage = () => {
             <div className="lg:col-span-7 space-y-8 relative">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
                 <div>
-                  <span className="text-foreground">Transform</span>
+                  <span className="text-foreground">&nbsp;&nbsp;Transform</span>
                 </div>
                 <div>
-                  <span className="text-primary">Your Body</span>
+                  <span className="text-primary"> &nbsp;&nbsp;Your Body</span>
                 </div>
                 <div className="pt-2">
-                  <span className="text-foreground">With Advanced</span>
+                  <span className="text-foreground"> &nbsp;&nbsp;With Advanced</span>
                 </div>
                 <div className="pt-2">
-                  <span className="text-foreground">AI</span>
-                  <span className="text-primary"> Technology</span>
+                  <span className="text-foreground"> &nbsp;&nbsp;AI</span>
+                  <span className="text-primary">&nbsp;Technology</span>
                 </div>
               </h1>
 
@@ -48,7 +48,7 @@ const HomePage = () => {
                 </div>
                 <div className="h-12 w-px bg-gradient-to-b from-transparent via-border to-transparent"></div>
                 <div className="flex flex-col">
-                  <div className="text-2xl text-primary">3min</div>
+                  <div className="text-2xl text-primary">3 min</div>
                   <div className="text-xs uppercase tracking-wider">GENERATION</div>
                 </div>
                 <div className="h-12 w-px bg-gradient-to-b from-transparent via-border to-transparent"></div>
