@@ -32,7 +32,8 @@ const HomePage = () => {
               </h1>
 
               {/* SEPERATOR LINE */}
-              <div className="h-px w-full bg-gradient-to-r from-primary via-secondary to-primary opacity-50"></div>
+              <div className="h-px w-full bg-gradient-to-r 
+              from-primary via-secondary to-primary opacity-50"></div>
 
               <p className="text-xl text-muted-foreground w-2/3">
                 Talk to our AI assistant and get personalized diet plans and workout routines
@@ -76,10 +77,14 @@ const HomePage = () => {
             <div className="lg:col-span-5 relative">
               {/* CORNER PIECES */}
               <div className="absolute -inset-4 pointer-events-none">
-                <div className="absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-border" />
-                <div className="absolute top-0 right-0 w-16 h-16 border-r-2 border-t-2 border-border" />
-                <div className="absolute bottom-0 left-0 w-16 h-16 border-l-2 border-b-2 border-border" />
-                <div className="absolute bottom-0 right-0 w-16 h-16 border-r-2 border-b-2 border-border" />
+                <div className="absolute top-0 left-0 w-16 h-16 border-l-2 
+                border-t-2 border-border" />
+                <div className="absolute top-0 right-0 w-16 h-16 border-r-2 border-t-2 
+                border-border" />
+                <div className="absolute bottom-0 left-0 w-16 h-16 border-l-2 border-b-2 
+                border-border" />
+                <div className="absolute bottom-0 right-0 w-16 h-16 border-r-2 border-b-2 
+                border-border" />
               </div>
 
               {/* IMAGE CONTANINER */}
@@ -92,7 +97,10 @@ const HomePage = () => {
                   />
 
                   {/* SCAN LINE */}
-                  <div className="absolute inset-0 bg-[linear-gradient(transparent_0%,transparent_calc(50%-1px),var(--cyber-glow-primary)_50%,transparent_calc(50%+1px),transparent_100%)] bg-[length:100%_8px] animate-scanline pointer-events-none" />
+                  <div className="absolute inset-0 bg-[linear-gradient(transparent_0%,
+                  transparent_calc(50%-1px),var(--cyber-glow-primary)_50%,transparent_calc(50%+1px),transparent_100%)] 
+                  bg-[length:100%_8px]
+                  animate-scanline pointer-events-none" />
 
                   {/* DECORATIONS ON TOP THE IMAGE */}
                   <div className="absolute inset-0 pointer-events-none">
@@ -105,7 +113,8 @@ const HomePage = () => {
                     <div className="absolute bottom-0 left-1/2 h-1/4 w-px bg-primary/50" />
                   </div>
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 
+                  to-transparent" />
                 </div>
 
                 {/* TERMINAL OVERLAY */}
@@ -120,4 +129,4 @@ const HomePage = () => {
     </div>
   );
 };
-export default HomePage;
+export default HomePage; 

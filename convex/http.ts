@@ -136,6 +136,7 @@ http.route({
         fitness_goal,
         fitness_level,
         dietary_restrictions,
+        dietary_preference,
       } = payload;
 
       console.log("Payload is here:", payload);
@@ -205,11 +206,12 @@ http.route({
         Weight: ${weight}
         Fitness goal: ${fitness_goal}
         Dietary restrictions: ${dietary_restrictions}
+        Dietary Prefernce: ${dietary_preference}
         
         As a professional nutrition coach:
         - Calculate appropriate daily calorie intake based on the person's stats and goals
         - Create a balanced meal plan with proper macronutrient distribution
-        - Include a variety of nutrient-dense foods while respecting dietary restrictions
+        - Include a variety of nutrient-dense foods while respecting dietary restrictions and their preference in food that can be vegetarian so strictly adhere to that
         - Consider meal timing around workouts for optimal performance and recovery
         
         CRITICAL SCHEMA INSTRUCTIONS:
@@ -219,7 +221,7 @@ http.route({
         - ONLY include the EXACT fields shown in the example below
         - Each meal should include ONLY a "name" and "foods" array
 
-        Return a JSON object with this EXACT structure and no other fields:
+        Return a JSON object with this EXACT structure and no other fields but according to the customer's need:
         {
           "dailyCalories": 2000,
           "meals": [
@@ -229,7 +231,7 @@ http.route({
             },
             {
               "name": "Lunch",
-              "foods": ["Grilled chicken salad", "Whole grain bread", "Water"]
+              "foods": ["Grilled Tofu salad", "Whole grain bread", "Water"]
             }
           ]
         }
